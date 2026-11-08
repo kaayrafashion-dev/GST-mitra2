@@ -1,0 +1,1 @@
+recursive-include gst_mitra *.json *.js *.css *.html *.md *.txt
