@@ -5,6 +5,9 @@ app_description = "Business operations extensions and public website for GST Mit
 app_email = ""
 app_license = "MIT"
 
+# Load the public marketing page stylesheet through Frappe's website asset pipeline.
+web_include_css = "/assets/gst_mitra/css/vyapar-pc.css"
+
 # The public Vyapar PC billing landing page is served at /vyapar-pc.
 # ERP accounting, stock, selling, buying, manufacturing and projects remain
 # native ERPNext capabilities; this app adds GST Mitra-specific presentation
