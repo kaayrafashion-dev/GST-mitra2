@@ -1,6 +1,6 @@
-# Unified GST Mitra + ERPNext build status
+# GST Mitra ERP build status
 
-## Foundation branch
+## Development branch
 
 `unified-platform-foundation`
 
@@ -8,14 +8,12 @@
 
 - Created a separate development branch from repository `main`.
 - Added initial installable Frappe app metadata and package files.
-- Added public Vyapar PC billing landing page at `/vyapar-pc`.
-- Added responsive CSS for desktop and mobile.
-- Added official Vyapar download links and feature sections.
-- Added deployment architecture and installation notes.
+- Added deployment architecture and installation notes for ERPNext and Docker.
+- Removed the unrelated landing-page files and their asset registration; this branch is scoped to GST Mitra only.
 
 ## Existing ERP foundation
 
-The repository README currently identifies its main-branch code as GST Mitra V3.4. The previously discussed V4.0 release-candidate ZIP was not available in the current project library at build time. Do not overwrite main or claim this branch is based on V4.0 until that artifact is supplied or the exact V4.0 commit is identified.
+The repository README on `main` identifies its code as GST Mitra V3.4. The previously discussed V4.0 release-candidate ZIP was not available in the current project library at build time. Do not overwrite `main` or claim this branch is based on V4.0 until that artifact is supplied or the exact V4.0 commit is identified.
 
 ## Not yet implemented or verified
 
@@ -25,12 +23,11 @@ The repository README currently identifies its main-branch code as GST Mitra V3.
 - Custom GST Mitra DocTypes and workflows beyond native ERPNext modules.
 - Production Docker image build and deployment.
 - HTTPS, backup/restore and security validation on the target server.
-- Browser/device QA of the landing page.
 
 ## Next engineering sequence
 
-1. Confirm target Frappe/ERPNext major-version pair and build custom image.
-2. Run app install, migration and website smoke tests in Docker development environment.
+1. Confirm target Frappe/ERPNext major-version pair and build the Docker development environment.
+2. Run app install, migration and smoke tests in Docker.
 3. Configure company, Indian chart of accounts, taxes, GSTIN and fiscal year.
 4. Validate sales, purchase, stock, manufacturing, projects and timesheets.
 5. Add custom India GST workflows only where native ERPNext/localization is insufficient.
